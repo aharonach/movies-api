@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "build": "npx babel --presets @babel/preset-react ui/src --out-dir ui/js",
-    "app": "node app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.17.2",
