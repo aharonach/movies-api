@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+img {
+    max-height: 100px;
+    width: auto;
+}
+
+.row:after, .row:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: lightpink;
+    padding: 15px;
+}
+
+main {
+    float: left;
+    width: 60%;
+    padding: 15px;
+}
+
+aside {
+    float: left;
+    width: 40%;
+    background: lightblue;
+    padding: 15px;
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 768px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 0 black;
+    border: 2px solid gray;
+    display: none;
+    background-color: white;
+    z-index: 100;
+    padding: 25px;
+    overflow-y: scroll;
+    bottom: 20px;
+}
+
+.popup.show {
+    display: block;
+}
+
+.review, 
+.movie {
+    border-top: 2px solid gray;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+form {
+    background-color: lightgray;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form label {
+    float: left;
+    margin-right: 5px;
+}
+
+form textarea {
+    width: 100%;
+}
+
+form button {
+    clear:both;
+    display: block;
+}

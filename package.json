@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "npx babel --presets @babel/preset-react ui/src --out-dir ui/js",
+    "app": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "http-status-codes": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-react": "^7.16.7"
+  }
+}
